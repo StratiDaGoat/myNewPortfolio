@@ -345,7 +345,7 @@ section {
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -368,6 +368,8 @@ article .icon {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .project-title {
