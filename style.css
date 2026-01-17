@@ -364,13 +364,23 @@ article .icon {
     background: rgb(250,250,250);
 }
 
+.project-img-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
+
 
 .project-title {
     margin: 1rem;
