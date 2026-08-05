@@ -1,226 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strati's Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efstratios Koulouris | Software Engineer</title>
+    <meta
+      name="description"
+      content="Software engineer and Indiana University Computer Science graduate specializing in Java, Spring Boot, backend APIs, databases, and full-stack web applications."
+    />
+    <link rel="canonical" href="https://efstratioskoulouris.com/" />
+    <meta name="author" content="Efstratios Koulouris" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://efstratioskoulouris.com/" />
+    <meta property="og:title" content="Efstratios Koulouris | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software engineer and Indiana University Computer Science graduate specializing in Java, Spring Boot, backend APIs, databases, and full-stack web applications."
+    />
+    <meta
+      property="og:image"
+      content="https://efstratioskoulouris.com/assets/og-image.jpg"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Efstratios Koulouris | Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Software engineer specializing in Java, Spring Boot, backend APIs, databases, and full-stack web applications."
+    />
+    <meta
+      name="twitter:image"
+      content="https://efstratioskoulouris.com/assets/og-image.jpg"
+    />
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./assets/favicon-32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Efstratios Koulouris</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Efstratios Koulouris</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div> 
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/stratikoulouristransparentsmall.png" alt="Strati Koulouris profile pic" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Efstratios Koulouris</h1>
-            <p class="section__text__p2">Software Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Efstratios Koulouris 10.30.25 Resume.docx.pdf')">Download Resume</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/efstratioskoulouris/'"/>
-                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/StratiDaGoat'"/>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/vacapicfull.png" alt="professional picture" class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon" class="icon"/>
-                        <h3>Education</h3>
-                        <p>Computer Science <br /> Indiana University</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I’m Efstratios Koulouris, a Computer Science graduate from Indiana University with a Business minor from the Kelley School of Business. I’m passionate about software engineering and web development, building responsive and practical solutions that improve how people use technology. I enjoy solving real-world problems through clear, efficient code and keep learning new tools to grow as a developer.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>React JS</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>C and Unix</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                <div class="article-container project-img-container">
-                    <img src="./assets/project1-resized.png" alt="Berwyn Fruit Market Website" class="project-img" />  
-                </div>
-                <h2 class="experience-sub-title project-title">Market Website</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/StratiDaGoat/berwyn-fruit-market'">Github</button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.berwynfruitmarket.com/'">Visit Site</button>
-                </div>
-                </div>
-                <div class="details-container color-container">
-                <div class="article-container project-img-container">
-                    <img src="./assets/project3.png" alt="C Game" class="project-img" />  
-                </div>
-                <h2 class="experience-sub-title project-title">Text Game in C</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/StratiDaGoat/finalProjectC'">Github</button>
-                </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container project-img-container">
-                        <img src="./assets/project2.png" alt="My Portfolio" class="project-img" />  
-                    </div>
-                    <h2 class="experience-sub-title project-title">My Portfolio</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/StratiDaGoat/myNewPortfolio'">Github</button>
-                    </div>
-                    </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:strati.koulouris@gmail.com"></a>strati.koulouris@gmail.com</p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/efstratioskoulouris/"></a>LinkedIn</p>
-            </div>
-        </div>
-    </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 Efstratios Koulouris. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-    <script type="module">
-        import { inject } from '@vercel/analytics';
-        inject();
+    <script>
+      (() => {
+        try {
+          const stored = localStorage.getItem("portfolio-theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute(
+            "data-theme",
+            stored || (prefersDark ? "dark" : "light")
+          );
+        } catch (_) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
     </script>
-</body>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Efstratios Koulouris",
+            "url": "https://efstratioskoulouris.com/",
+            "description": "Software engineer portfolio focused on backend and full-stack development."
+          },
+          {
+            "@type": "Person",
+            "name": "Efstratios Koulouris",
+            "alternateName": "Strati Koulouris",
+            "url": "https://efstratioskoulouris.com/",
+            "image": "https://efstratioskoulouris.com/assets/stratikoulouristransparentsmall.png",
+            "jobTitle": "Software Engineer",
+            "email": "mailto:strati.koulouris@gmail.com",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Indiana University"
+            },
+            "sameAs": [
+              "https://github.com/StratiDaGoat",
+              "https://www.linkedin.com/in/efstratioskoulouris/"
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="top" tabindex="-1"></div>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="#top" data-scroll-top>Strati Koulouris</a>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          id="nav-toggle"
+        >
+          <span class="sr-only">Menu</span>
+          <span class="nav__toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__panel" id="nav-menu">
+          <ul class="nav__links">
+            <li><a href="#projects" data-nav-link>Projects</a></li>
+            <li><a href="#experience" data-nav-link>Experience</a></li>
+            <li><a href="#skills" data-nav-link>Skills</a></li>
+            <li><a href="#about" data-nav-link>About</a></li>
+            <li><a href="#contact" data-nav-link>Contact</a></li>
+          </ul>
+          <div class="nav__actions">
+            <button
+              type="button"
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Toggle color theme"
+            >
+              <span class="theme-toggle__sun" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+              </span>
+              <span class="theme-toggle__moon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+              </span>
+            </button>
+            <a
+              class="btn btn--solid btn--sm"
+              href="./assets/Efstratios-Koulouris-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero" aria-labelledby="hero-heading">
+        <div class="container hero__layout">
+          <div class="hero__copy">
+            <p class="kicker">Available for software engineering roles</p>
+            <h1 id="hero-heading">Efstratios Koulouris</h1>
+            <p class="hero__title">Software Engineer</p>
+            <p class="hero__lead">
+              Computer Science graduate from Indiana University. I build APIs,
+              data models, and web products with Java, Spring Boot, and React.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--solid" href="#projects">View work</a>
+              <a
+                class="btn btn--line"
+                href="./assets/Efstratios-Koulouris-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Download resume</a
+              >
+            </div>
+
+            <div class="hero__meta" aria-label="Profile summary">
+              <span>Illinois, US</span>
+              <span aria-hidden="true">·</span>
+              <span>Open to opportunities</span>
+            </div>
+
+            <ul class="hero__links" aria-label="Profiles">
+              <li>
+                <a href="https://github.com/StratiDaGoat" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/efstratioskoulouris/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </li>
+              <li>
+                <a href="mailto:strati.koulouris@gmail.com">Email</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__photo">
+            <img
+              src="./assets/stratikoulouristransparentsmall.png"
+              alt="Efstratios Koulouris"
+              width="420"
+              height="665"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="section__top">
+            <p class="kicker">Selected work</p>
+            <h2 id="projects-heading">Projects</h2>
+          </div>
+          <div class="project-list" id="project-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-heading">
+        <div class="container">
+          <div class="section__top">
+            <p class="kicker">Career</p>
+            <h2 id="experience-heading">Experience</h2>
+          </div>
+          <ol class="xp-list" id="experience-list"></ol>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <div class="section__top">
+            <p class="kicker">Stack</p>
+            <h2 id="skills-heading">Skills</h2>
+          </div>
+          <div class="skills" id="skills-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="container about">
+          <div class="about__copy">
+            <div class="section__top">
+              <p class="kicker">Background</p>
+              <h2 id="about-heading">About</h2>
+            </div>
+            <div id="about-text"></div>
+          </div>
+          <aside class="edu" id="education-card" aria-labelledby="education-heading"></aside>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-heading">
+        <div class="container contact__wrap">
+          <p class="kicker">Contact</p>
+          <h2 id="contact-heading">Let’s build something useful.</h2>
+          <p class="contact__lead">
+            Exploring software engineering roles. Happy to talk about backend and
+            full-stack work on your team.
+          </p>
+          <div class="contact__cta">
+            <a class="btn btn--solid" href="mailto:strati.koulouris@gmail.com">Email me</a>
+            <a
+              class="btn btn--line"
+              href="./assets/Efstratios-Koulouris-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
+          </div>
+          <button
+            type="button"
+            class="email-copy"
+            id="email-copy"
+            data-email="strati.koulouris@gmail.com"
+            aria-label="Copy email address to clipboard"
+          >
+            <span>strati.koulouris@gmail.com</span>
+            <span id="email-copy-hint">Copy</span>
+          </button>
+          <ul class="contact__links">
+            <li>
+              <a href="https://www.linkedin.com/in/efstratioskoulouris/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://github.com/StratiDaGoat" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>Strati Koulouris</span>
+        <p><span id="copyright-year"></span> All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script type="module">
+      try {
+        const { inject } = await import("https://cdn.jsdelivr.net/npm/@vercel/analytics@1/+esm");
+        inject();
+      } catch (_) {}
+    </script>
+  </body>
 </html>
