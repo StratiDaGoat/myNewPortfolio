@@ -191,12 +191,14 @@ function initNav() {
 
   const closeMenu = () => {
     toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open menu");
     panel.classList.remove("is-open");
     document.body.classList.remove("nav-open");
   };
 
   const openMenu = () => {
     toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-label", "Close menu");
     panel.classList.add("is-open");
     document.body.classList.add("nav-open");
   };

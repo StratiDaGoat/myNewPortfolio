@@ -97,6 +97,18 @@ a {
   clip: rect(0, 0, 0, 0);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .skip-link {
   position: absolute;
   left: 1rem;
@@ -152,12 +164,18 @@ a {
   display: none;
   width: 2.5rem;
   height: 2.5rem;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  border-radius: 8px;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
   cursor: pointer;
   padding: 0;
   place-items: center;
+  color: var(--ink);
+}
+
+.nav__toggle:hover,
+.nav__toggle:focus-visible {
+  background: transparent;
 }
 
 .nav__toggle-bars,
@@ -846,6 +864,9 @@ a {
 
   .nav__toggle {
     display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-right: -0.35rem;
   }
 
   .nav__panel {
@@ -854,8 +875,8 @@ a {
     inset: var(--header) 0 auto 0;
     flex-direction: column;
     align-items: stretch;
-    gap: 0.75rem;
-    padding: 1rem 1.25rem 1.25rem;
+    gap: 0.35rem;
+    padding: 0.75rem 1rem 1.25rem;
     background: var(--surface);
     border-bottom: 1px solid var(--line);
     box-shadow: var(--shadow);
@@ -867,15 +888,36 @@ a {
 
   .nav__links {
     flex-direction: column;
+    gap: 0.2rem;
   }
 
   .nav__links a {
-    padding: 0.75rem 0.65rem;
-    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1.05rem;
+    border-radius: 10px;
   }
 
   .nav__actions {
     justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: 0.35rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .nav__actions .theme-toggle {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .nav__actions .btn {
+    min-height: 3rem;
+    padding: 0.75rem 1.25rem;
+    flex: 1;
   }
 
   .hero {
@@ -897,10 +939,6 @@ a {
 
   .btn {
     width: 100%;
-  }
-
-  .nav__actions .btn {
-    width: auto;
   }
 
   .email-copy {
