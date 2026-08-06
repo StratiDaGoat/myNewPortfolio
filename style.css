@@ -433,10 +433,35 @@ a {
   align-items: flex-end;
 }
 
+.hero__photo picture {
+  display: block;
+  width: min(100%, 360px);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 90%,
+    rgba(0, 0, 0, 0.7) 97%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 90%,
+    rgba(0, 0, 0, 0.7) 97%,
+    transparent 100%
+  );
+}
+
 .hero__photo img {
-  width: min(100%, 380px);
+  width: 100%;
   height: auto;
   object-fit: contain;
+  /* Soft glow instead of hard silhouette shadow */
+  filter: drop-shadow(0 22px 40px rgba(17, 17, 17, 0.1));
+}
+
+[data-theme="dark"] .hero__photo img {
+  filter: drop-shadow(0 22px 40px rgba(0, 0, 0, 0.35));
 }
 
 /* Sections */
@@ -847,8 +872,8 @@ a {
     order: -1;
   }
 
-  .hero__photo img {
-    width: min(100%, 260px);
+  .hero__photo picture {
+    width: min(100%, 240px);
   }
 
   .xp__when {
