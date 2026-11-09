@@ -5,7 +5,6 @@
  * TODO: Confirm and feature additional projects if public repos become available:
  * - AI Invoice Assistant
  * - World Cup Bracket Prediction Platform
- * - Anime Watchlist application
  */
 
 export const site = {
@@ -35,6 +34,29 @@ export const projects = [
     technologies: ["TypeScript", "React", "SCSS", "Vite", "Vercel"],
     github: "https://github.com/StratiDaGoat/berwyn-fruit-market",
     live: "https://www.berwynfruitmarket.com/",
+  },
+  {
+    id: "aniwatchlist",
+    name: "AniWatchList",
+    tagline: "Full-stack anime tracker with its own catalog and user accounts.",
+    status: "Live",
+    image: "./assets/aniwatchlist.jpg",
+    imageAlt:
+      "AniWatchList homepage with an anime search bar and a featured show banner",
+    description:
+      "Built a web app for tracking anime series and movies to replace a notes-app watchlist. Users sign up, search the site's own catalog of 2,800+ titles, track episode and runtime progress, and organize shows into Currently Watching and Completed, with trending, airing, and Continue Watching sections on the home page.",
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Prisma",
+      "Auth.js",
+    ],
+    // Repository is private
+    github: null,
+    live: "https://aniwatchlist.com",
   },
   {
     id: "guitar-inventory",
